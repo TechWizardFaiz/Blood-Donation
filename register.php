@@ -10,7 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $birthdate = isset($_POST["birth_date"]) ? htmlspecialchars($_POST["birth_date"]) : "";
     $weight = isset($_POST["weight"]) ? htmlspecialchars($_POST["weight"]) : "";
     $state = isset($_POST["state"]) ? htmlspecialchars($_POST["state"]) : "";
-   
+    $zipcode = isset($_POST["zip_code"]) ? htmlspecialchars($_POST["zip_code"]) : "";
+    $district = isset($_POST["district"]) ? htmlspecialchars($_POST["district"]) : "";
+    $area = isset($_POST["area"]) ? htmlspecialchars($_POST["area"]) : "";
+    $landmarks = isset($_POST["landmarks"]) ? htmlspecialchars($_POST["landmarks"]) : "";
+
     $servername = "localhost";
     $username = "root";
     $dbpassword = "";
