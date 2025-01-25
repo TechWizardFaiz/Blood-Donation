@@ -101,7 +101,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       margin-bottom: 20px;
     }
 
-   
+    .form-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .form-field {
+      flex: 0 0 48%;
+      margin-bottom: 20px;
+    }
+
+    .form-field label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-field input,
+    .form-field select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
     .form-field input[type="submit"] {
       background-color: #216aca;
