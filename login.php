@@ -66,7 +66,71 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <!-- favicon-->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
+  <!--css-->
+  <link rel="stylesheet" href="./assets/css/style.css">
   
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #c5c7c9;
+      margin: 20px 0;
+    }
+
+    /* Form Styles */
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-title {
+      color: var(--oxford-blue-1);
+      font-family: var(--ff-poppins);
+      font-size: 3.4rem;
+      font-weight: var(--fw-800);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+   
+
+    .form-field input[type="submit"] {
+      background-color: #216aca;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .form-field input[type="submit"]:hover {
+      background-color: #060952;
+    }
+
+    .form-title-login {
+      text-align: center;
+      margin-top: 30px;
+      font-family: var(--ff-poppins);
+      font-size: 1.8rem;
+      color: #216aca;
+    }
+
+    .form-title-login a {
+      color: #216aca;
+      text-decoration: underline;
+    }
+
+    .form-title-login a:hover {
+      color: #03d9ff;
+    }
+  </style>
 
 </head>
 
