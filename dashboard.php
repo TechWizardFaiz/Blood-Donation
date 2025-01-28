@@ -261,6 +261,26 @@ $conn->close();
             </div>
           </div>
 
+          <!-- Password Change Section -->
+<section class="password-change">
+    <h2>Password Change</h2>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <div class="dashboard-field">
+            <label>Current Password:</label>
+            <input type="password" name="current_password" required>
+        </div>
+        <div class="dashboard-field">
+            <label>New Password:</label>
+            <input type="password" name="new_password" required>
+        </div>
+        <div class="dashboard-field">
+            <label>Confirm New Password:</label>
+            <input type="password" name="confirm_new_password" required>
+        </div>
+        <button type="submit" name="change_password" class="btn">Change Password</button>
+    </form>
+</section>
+
           <br>
           <a href="logout.php" class="btn logout-btn">Logout</a>
         </div>
