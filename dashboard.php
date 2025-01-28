@@ -427,6 +427,10 @@ $conn->close();
     </div>
   </footer>
 
+  <!--BACK TO TOP-->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
 
   <!--custom js link-->
   <script src="./assets/js/script.js" defer></script>
