@@ -111,7 +111,137 @@ $conn->close();
     <!-- favicon-->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-   
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+    /* New CSS for Dashboard Section */
+    hr {
+      border: none; /* Remove the default border */
+      height: 1px; /* Set the height to control the thickness */
+      background-color: #c5c7c9; /* Set the desired color */
+      margin: 20px 0; /* Add some margin to separate form sections */
+    }
+    .dashboard-section {
+      padding: 60px 0;
+    }
+
+    .dashboard-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .dashboard-form-container {
+      flex-basis: 65%;
+      margin-top: 6%;
+    }
+
+    .dashboard-form {
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    .dashboard-fields {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .dashboard-field {
+      margin-bottom: 20px;
+    }
+
+    .donation-password-section {
+      flex-basis: 30%;
+      margin-top: 6%;
+    }
+
+    .donation-received-box {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .donation-received-box label {
+      font-weight: 600;
+    }
+
+    .count {
+      font-size: 24px;
+      font-weight: 700;
+      color: #6c63ff;
+    }
+
+    .password-change {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .password-change h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .save-changes-btn,
+    .logout-btn {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #6c63ff;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .save-changes-btn:hover,
+    .logout-btn:hover {
+      background-color: #524dff;
+    }
+
+        /*css for the date and weight fields of form*/
+    .dashboard-field input[type="number"],
+  .dashboard-field input[type="date"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+
+  .dashboard-field input[type="number"]:focus,
+  .dashboard-field input[type="date"]:focus {
+    border-color: #6c63ff;
+  }
+
+  /* CSS for the password change fields */
+  .password-change input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+
+  .password-change input[type="password"]:focus {
+    border-color: #6c63ff;
+  }
+  </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
