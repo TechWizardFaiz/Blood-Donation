@@ -139,6 +139,35 @@
     </section>
 
 
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["email_address"]) && filter_var($_POST["email_address"], FILTER_VALIDATE_EMAIL)) {
+        // Sanitize the email address to prevent SQL injection
+        $email = htmlspecialchars($_POST["email_address"]);
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "redstream_db";
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        $stmt = $conn->prepare("INSERT INTO response_back (email) VALUES (?)");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        if ($stmt->affected_rows > 0) {
+            echo '<script>showPopup("Email added successfully!");</script>';
+        } else {
+            echo '<script>showPopup("Error: Unable to add email. Please try again later.");</script>';
+        }
+        $stmt->close();
+        $conn->close();
+    } else {
+        echo '<script>showPopup("Error: Invalid email address. Please enter a valid email.");</script>';
+    }
+}
+?>
+
   <!--BACK TO TOP-->
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
