@@ -18,7 +18,67 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
 
-  
+  <style>
+    /* Popup styles */
+    .popup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background: linear-gradient(135deg, #ffffff, #a3d2ee);
+      color: #0e254e;
+      font-size: 16px;
+      z-index: 9999;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media screen and (max-width: 768px) {
+    .hero-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .email-field {
+        margin-bottom: 10px;
+      }
+      .hero-banner iframe {
+        width: 100%;
+        height: 200px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      .hero-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .email-field {
+        margin-bottom: 10px;
+      }
+
+      .hero-banner iframe {
+        width: 100%;
+        height: 250px;
+      }
+    }
+    /* Media query for screen sizes between 905x800 and 1197x800 */
+    @media screen and (min-width: 905px) and (max-width: 1197px) {
+      .hero-form {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+      .hero-banner iframe {
+        width: 100%;
+        height: 300px;
+      }
+    }
+
+  </style>
+
   <script>
     // Function to display the popup message
     function showPopup(message) {
