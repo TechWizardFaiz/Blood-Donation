@@ -60,7 +60,7 @@ This include front end design and backend code for a blood donation based websit
 
 This pack comes under Creative Commons Attribution-NonCommercial license (CC BY-NC). 
 
-~Work by Sethu Satheesh
+~Work by Faizan Khan
   
-  ©Sethu
+  ©Faizan
 
